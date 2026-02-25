@@ -1,11 +1,11 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: ""
+url: "https://the-peaceful-drawer.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+title: Ngăn kéo bình yên                                    # site's title
+description: "Nơi mình học cách sống tốt hơn mỗi ngày. | 「より良く生きる」を学ぶ、私の小さな引き出し。"      # used by search engines
+avatar: assets/img/.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
