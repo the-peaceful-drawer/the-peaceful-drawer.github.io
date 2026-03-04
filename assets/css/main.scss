@@ -1,4 +1,42 @@
----
----
+--- # File này cần 2 vạch ngang ở đầu để Jekyll hiểu và biên dịch --- --- # Hai vạch ngang này bắt buộc phải có để Jekyll biên dịch Sass --- $bg-color: #fdfaf5;
+$text-color: #333333;
+$accent-color: #8fb8a8;
 
-@import "type-on-strap";
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.site-header {
+  text-align: center;
+  padding: 50px 0;
+
+  .site-title {
+    color: $accent-color;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: $text-color;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
