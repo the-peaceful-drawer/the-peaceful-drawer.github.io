@@ -64,7 +64,7 @@ body {
           text-decoration: none;
           color:black;
           font-weight: bold;
-          font-size: 0.9rem;
+          font-size: 1.0rem;
           text-transform: uppercase;
           letter-spacing: 1.5px;
           &:hover { color: $accent-color; }
@@ -77,7 +77,7 @@ body {
 // 5. Hệ thống Submenu & Mũi tên (Đã sửa lỗi)
 .has-submenu {
   .arrow {
-    font-size: 14px; // TĂNG KÍCH THƯỚC: Mũi tên rõ ràng hơn theo yêu cầu
+    font-size: 12px; // TĂNG KÍCH THƯỚC: Mũi tên rõ ràng hơn theo yêu cầu
     margin-left: 8px;
     display: inline-block;
     transition: transform 0.3s;
@@ -118,7 +118,7 @@ body {
       display: block !important;
       font-weight: normal !important;
       text-transform: none !important;
-      font-size: 0.9rem !important;
+      font-size: 1.0rem !important;
 
       &:hover {
         background-color: #f9f9f9;
@@ -128,10 +128,141 @@ body {
   }
 }
 
-// Responsive cho Mobile
+
+/* --- CSS MỚI CẬP NHẬT CHO TRANG CHỦ (NỐI VÀO CUỐI FILE MAIN.SCSS) --- */
+
+// Khung giới thiệu chính
+.intro-box {
+  background-color: white; // Màu nền trắng bên trong khung
+  border: 2px solid $text-color; // Viền đậm theo thiết kế
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative; // Để canh signature
+
+  .intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  // Phần chữ bên trái
+  .intro-text {
+    flex: 1;
+
+    h2 {
+      font-family: $font-title;
+      font-size: 2.2rem; // Cỡ chữ lớn, mềm mại
+      margin: 0 0 20px 0;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: lighten($text-color, 15%); // Màu chữ xám nhẹ hơn
+    }
+  }
+
+  // Phần hình ảnh bên phải
+  .intro-illustration {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    // Placeholder khi chưa có hình
+    .logo-placeholder {
+      font-family: $font-title;
+      font-size: 0.9rem;
+      color: $accent-color;
+      border: 1px dashed $accent-color;
+      padding: 20px;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+
+  // Chữ "Created by PhucVo" canh giữa ở dưới
+  .signature {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    margin: 40px 0 0 0;
+    width: 100%;
+  }
+}
+
+// Phần danh sách bài viết ở dưới
+.recent-posts {
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+  h3 {
+    font-family: $font-title;
+    font-size: 1.5rem;
+    color: lighten($text-color, 10%);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 35px;
+      padding-left: 20px;
+      border-left: 3px solid #f2f2f2; // Vạch mờ bên trái cho đẹp
+
+      h4 {
+        font-size: 1.25rem;
+        margin: 0 0 10px 0;
+        color: $text-color;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+        margin: 0;
+      }
+
+      .read-more {
+        color: $accent-color;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 0.9rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Responsive cho Mobile (Khi chăm bé xem điện thoại)
 @media (max-width: 768px) {
-  .container, .header-container {
-    padding-left: 5%;
-    padding-right: 5%;
+  .intro-box {
+    padding: 25px;
+
+    .intro-content {
+      flex-direction: column-reverse; // Hình ảnh lên trước trên mobile
+      text-align: center;
+    }
+
+    .intro-illustration {
+      margin-bottom: 20px;
+    }
   }
 }
