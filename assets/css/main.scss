@@ -1,5 +1,6 @@
---- # File này cần 2 vạch ngang ở đầu để Jekyll hiểu và biên dịch --- --- # Hai vạch ngang này bắt buộc phải có để Jekyll biên dịch Sass --- $bg-color: #fdfaf5;
-
+--- 
+# Hai vạch ngang này bắt buộc phải có để Jekyll biên dịch Sass
+ ---
 // 1. Khai báo Biến (Variables)
 $bg-color: #fdfaf5; // Màu kem nền nã
 $text-color: #333333; // Màu chữ xám đậm dễ đọc
