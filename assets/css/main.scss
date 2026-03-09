@@ -1,13 +1,13 @@
 --- 
 ---
-// 1. Khai báo Biến (Variables)
-$bg-color: #fdfaf5; // Màu kem nền nã
-$text-color: #333333; // Màu chữ xám đậm dễ đọc
-$accent-color: #8fb8a8; // Màu xanh nhạt (Sage) làm điểm nhấn
-$font-title: "Aprila", "Palatino Linotype", serif;
-$font-body: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+// 1. Biến (Variables)
+$bg-color: #fdfaf5;
+$text-color: #333333;
+$accent-color: #8fb8a8;
+$font-title: "Georgia", "Baskerville", serif;
+$font-body: "Georgia", serif;
 
-// 2. Thiết lập cơ bản (Base Styles)
+// 2. Thiết lập cơ bản
 body {
   background-color: $bg-color;
   color: $text-color;
@@ -17,121 +17,121 @@ body {
   padding: 0;
 }
 
-// 3. Khung chứa nội dung (Layout)
-.container {
-  max-width: 1000px; // Độ rộng vừa phải để đọc tin tức N1 không mỏi mắt
-  margin: 0 auto;
-  padding: 0 20px;
+// 3. Quy hoạch lề 15% (Layout)
+.container, .header-container {
+  max-width: 100%; 
+  padding-left: 15%; 
+  padding-right: 15%;
+  box-sizing: border-box;
 }
 
-// 4. Header & Navigation (Phần bạn yêu cầu)
+// 4. Header & Navigation
 .site-header {
-  padding: 40px 0 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 60px 0 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
 
   .header-container {
     display: flex;
-    flex-direction: column; // Xếp chồng tiêu đề và menu
-    align-items: flex-start; // Đẩy toàn bộ sát lề trái
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .site-title {
-    margin: 0 0 25px 0;
-
+    margin: 0 0 30px 0;
     a {
       font-family: $font-title;
-      font-size: 26px; // Kích thước chuẩn yêu cầu
-      color: $text-color;
+      font-size: 32px;
+      color: #9fc7aa;
       text-decoration: none;
-      letter-spacing: 0.5px;
-
-      &:hover {
-        color: $accent-color;
-      }
+      font-style: italic;
+      &:hover { color: $accent-color; }
     }
   }
 
-  // Cấu trúc Menu chính
   .main-nav {
     .menu-list {
       display: flex;
       list-style: none;
       padding: 0;
       margin: 0;
-      gap: 35px; // Khoảng cách đều nhau giữa các mục
+      gap: 40px;
 
       li {
-        position: relative; // Để làm gốc cho Submenu
-
+        position: relative;
+        padding-bottom: 15px; // TẠO CẦU NỐI: Giữ cho menu không bị mất hover khi di xuống
+        
         a {
           text-decoration: none;
-          color: $text-color;
+          color: #666;
           font-weight: bold;
           font-size: 0.85em;
           text-transform: uppercase;
-          letter-spacing: 1px;
-          transition: 0.3s;
-
-          &:hover {
-            color: $accent-color;
-          }
-        }
-      }
-    }
-  }
-
-  // 5. Hệ thống Submenu cho "Chinh phục"
-  .has-submenu {
-    .arrow {
-      font-size: 8px;
-      margin-left: 4px;
-      vertical-align: middle;
-    }
-
-    &:hover .submenu {
-      display: block; // Hiện ra khi di chuột
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    min-width: 180px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
-    padding: 10px 0;
-    margin-top: 10px;
-    list-style: none;
-    z-index: 1000;
-    border-radius: 4px;
-
-    li {
-      padding: 0;
-
-      a {
-        padding: 10px 20px;
-        display: block;
-        font-size: 0.8em;
-        font-weight: normal;
-        text-transform: none;
-
-        &:hover {
-          background-color: $bg-color;
-          color: $accent-color;
+          letter-spacing: 1.5px;
+          &:hover { color: $accent-color; }
         }
       }
     }
   }
 }
 
-// 6. Responsive cho Mobile (Khi vừa bế bé vừa xem điện thoại)
+// 5. Hệ thống Submenu & Mũi tên (Đã sửa lỗi)
+.has-submenu {
+  .arrow {
+    font-size: 14px; // TĂNG KÍCH THƯỚC: Mũi tên rõ ràng hơn theo yêu cầu
+    margin-left: 8px;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+
+  // Khi hover vào li cha, submenu hiện ra
+  &:hover {
+    .submenu {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    .arrow {
+      transform: rotate(180deg); // Hiệu ứng xoay mũi tên cho chuyên nghiệp
+    }
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; // Nối liền ngay sau phần padding-bottom của li cha
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 10px 0;
+  margin: 0; // XÓA MARGIN: Để không tạo khoảng trống gây mất hover
+  list-style: none;
+  z-index: 1000;
+  border-radius: 4px;
+
+  li {
+    padding-bottom: 0 !important; // Reset padding cho các item bên trong
+    
+    a {
+      padding: 12px 20px !important;
+      display: block !important;
+      font-weight: normal !important;
+      text-transform: none !important;
+      font-size: 0.9em !important;
+
+      &:hover {
+        background-color: #f9f9f9;
+        color: $accent-color !important;
+      }
+    }
+  }
+}
+
+// Responsive cho Mobile
 @media (max-width: 768px) {
-  .menu-list {
-    flex-wrap: wrap;
-    gap: 15px !important;
+  .container, .header-container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
