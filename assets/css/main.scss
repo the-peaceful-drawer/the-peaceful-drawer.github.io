@@ -64,7 +64,7 @@ body {
           text-decoration: none;
           color:black;
           font-weight: bold;
-          font-size: 1rem;
+          font-size: 0.9rem;
           text-transform: uppercase;
           letter-spacing: 1.5px;
           &:hover { color: $accent-color; }
@@ -118,7 +118,7 @@ body {
       display: block !important;
       font-weight: normal !important;
       text-transform: none !important;
-      font-size: 1rem !important;
+      font-size: 0.9rem !important;
 
       &:hover {
         background-color: #f9f9f9;
