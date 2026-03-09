@@ -40,7 +40,7 @@ body {
     margin: 0 0 30px 0;
     a {
       font-family: $font-title;
-      font-size: 32px;
+      font-size: 2rem;
       color: #9fc7aa;
       text-decoration: none;
       font-style: italic;
@@ -64,7 +64,7 @@ body {
           text-decoration: none;
           color: #666;
           font-weight: bold;
-          font-size: 0.85em;
+          font-size: 1.3rem;
           text-transform: uppercase;
           letter-spacing: 1.5px;
           &:hover { color: $accent-color; }
