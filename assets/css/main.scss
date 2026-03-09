@@ -1,42 +1,135 @@
---- # File này cần 2 vạch ngang ở đầu để Jekyll hiểu và biên dịch --- --- # Hai vạch ngang này bắt buộc phải có để Jekyll biên dịch Sass --- $bg-color: #fdfaf5;
-$text-color: #333333;
-$accent-color: #8fb8a8;
+--- # File này cần 2 vạch ngang ở đầu để Jekyll hiểu và biên dịch --- // 1. Khai báo Biến (Variables)
+$bg-color: #fdfaf5; // Màu kem nền nã
+$text-color: #333333; // Màu chữ xám đậm dễ đọc
+$accent-color: #8fb8a8; // Màu xanh nhạt (Sage) làm điểm nhấn
+$font-title: "Aprila", "Palatino Linotype", serif;
+$font-body: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
+// 2. Thiết lập cơ bản (Base Styles)
 body {
   background-color: $bg-color;
   color: $text-color;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: $font-body;
   line-height: 1.8;
   margin: 0;
   padding: 0;
 }
 
+// 3. Khung chứa nội dung (Layout)
 .container {
-  max-width: 900px;
+  max-width: 1000px; // Độ rộng vừa phải để đọc tin tức N1 không mỏi mắt
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 20px;
 }
 
+// 4. Header & Navigation (Phần bạn yêu cầu)
 .site-header {
-  text-align: center;
-  padding: 50px 0;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
-  .site-title {
-    color: $accent-color;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  .header-container {
+    display: flex;
+    flex-direction: column; // Xếp chồng tiêu đề và menu
+    align-items: flex-start; // Đẩy toàn bộ sát lề trái
   }
 
-  nav a {
-    text-decoration: none;
-    color: $text-color;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 0.9em;
-    text-transform: uppercase;
+  .site-title {
+    margin: 0 0 25px 0;
 
-    &:hover {
-      text-decoration: underline;
+    a {
+      font-family: $font-title;
+      font-size: 26px; // Kích thước chuẩn yêu cầu
+      color: $text-color;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        color: $accent-color;
+      }
     }
+  }
+
+  // Cấu trúc Menu chính
+  .main-nav {
+    .menu-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 35px; // Khoảng cách đều nhau giữa các mục
+
+      li {
+        position: relative; // Để làm gốc cho Submenu
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-weight: bold;
+          font-size: 0.85em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: 0.3s;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+
+  // 5. Hệ thống Submenu cho "Chinh phục"
+  .has-submenu {
+    .arrow {
+      font-size: 8px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    &:hover .submenu {
+      display: block; // Hiện ra khi di chuột
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+    margin-top: 10px;
+    list-style: none;
+    z-index: 1000;
+    border-radius: 4px;
+
+    li {
+      padding: 0;
+
+      a {
+        padding: 10px 20px;
+        display: block;
+        font-size: 0.8em;
+        font-weight: normal;
+        text-transform: none;
+
+        &:hover {
+          background-color: $bg-color;
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+// 6. Responsive cho Mobile (Khi vừa bế bé vừa xem điện thoại)
+@media (max-width: 768px) {
+  .menu-list {
+    flex-wrap: wrap;
+    gap: 15px !important;
   }
 }
