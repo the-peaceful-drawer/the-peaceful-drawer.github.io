@@ -131,56 +131,48 @@ body {
 
 /* --- CSS MỚI CẬP NHẬT CHO TRANG CHỦ (NỐI VÀO CUỐI FILE MAIN.SCSS) --- */
 
-.intro-box {
+.intro-box { // PHẢI CÓ DẤU CHẤM Ở ĐÂY
   background-color: #f5f1e9;
   border: 1px solid #333;
   border-radius: 4px;
   padding: 30px 40px;
   margin-top: 20px;
+  box-sizing: border-box !important; // Ép padding chui vào trong
+  width: 100% !important;            // Tự giãn theo lớp cha
+  height: auto !important;           // Không bao giờ để chiều cao cố định
 
   .intro-content {
-    display: flex !important;       // BẮT BUỘC dùng Flexbox
-    flex-direction: row !important; // BẮT BUỘC nằm ngang
-    flex-wrap: nowrap !important;   // KHÔNG cho phép nhảy dòng
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: auto !important;
   }
 
-  // Phần chữ chiếm 75% (để lại 5% khoảng trống)
   .intro-text {
-    flex: 0 0 75% !important;
+    flex: 0 0 75% !important; // Đã xóa khoảng trắng lỗi
     max-width: 75%;
-    text-align: left;
+    height: auto !important;
 
     h2 { font-family: $font-title; font-size: 2rem; margin-bottom: 15px; }
     p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
   }
 
-  // Phần hình chiếm 20%
   .intro-illustration {
-    flex: 0 0 20% !important;
+    flex: 0 0 20% !important; // Đã xóa khoảng trắng lỗi
     max-width: 20%;
-    display: flex;
-    justify-content: flex-end;
-
+    
     img {
-      width: 100%;           // Ảnh tự co theo 20% của khung
+      width: 100%;
       height: auto;
       border-radius: 50%;
       display: block;
     }
   }
-
-  // Dòng chữ ký nằm dưới cùng, căn giữa
-  .signature {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 30px;
-    width: 100%;
-  }
 }
+
 
 // Phần danh sách bài viết ở dưới
 .recent-posts {
