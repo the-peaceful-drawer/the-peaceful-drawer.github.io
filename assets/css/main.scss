@@ -247,3 +247,74 @@ body {
     }
   }
 }
+/* --- LAYOUT CHO CÁC TRANG CON (85-15) --- */
+
+.page-layout {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 3%; // Khoảng cách nhỏ giữa 2 cột
+  margin-top: 40px;
+}
+
+// Cột nội dung chính
+.page-content {
+  flex: 0 0 82% !important; // 82% + 3% gap + 15% sidebar = 100%
+  min-height: 600px;
+  
+  h1 {
+    font-family: $font-title;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+}
+
+// Cột Sidebar bên phải (15%)
+.page-sidebar {
+  flex: 0 0 15% !important;
+  border-left: 1px solid #eee; // Vạch ngăn cách nhẹ nhàng
+  padding-left: 20px;
+
+  .intro-sidebar {
+    text-align: left;
+
+    .intro-logo {
+      margin-bottom: 20px;
+      img {
+        width: 100%; // Logo tự co theo chiều rộng 15%
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 0.9rem; // Chữ nhỏ hơn một chút để vừa sidebar hẹp
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .signature-sidebar {
+      font-size: 0.7rem;
+      margin-top: 30px;
+      color: #ccc;
+    }
+  }
+}
+
+// Responsive cho Mobile: Trên điện thoại thì đẩy Sidebar xuống dưới cùng
+@media (max-width: 1024px) {
+  .page-layout {
+    flex-direction: column !important;
+  }
+  .page-content, .page-sidebar {
+    flex: 0 0 100% !important;
+    border: none;
+    padding: 0;
+  }
+}
