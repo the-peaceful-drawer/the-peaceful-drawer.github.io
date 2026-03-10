@@ -132,53 +132,46 @@ body {
 /* --- CSS MỚI CẬP NHẬT CHO TRANG CHỦ (NỐI VÀO CUỐI FILE MAIN.SCSS) --- */
 
 .intro-box {
-  background-color: #f5f1e9; // Màu nền kem nhẹ theo thiết kế Canva
-  border: 1px solid #333;    // Viền mảnh tinh tế
+  background-color: #f5f1e9;
+  border: 1px solid #333;
   border-radius: 4px;
   padding: 30px 40px;
   margin-top: 20px;
-  position: relative;
 
   .intro-content {
-    display: flex;
-    flex-direction: row;     // Ép nằm trên một hàng
+    display: flex !important;       // BẮT BUỘC dùng Flexbox
+    flex-direction: row !important; // BẮT BUỘC nằm ngang
+    flex-wrap: nowrap !important;   // KHÔNG cho phép nhảy dòng
     justify-content: space-between;
-    align-items: center;     // Canh giữa theo chiều dọc
+    align-items: center;
     width: 100%;
-    gap: 2%;                 // Khoảng cách nhỏ giữa chữ và hình
   }
 
-  // Phần chữ chiếm ~80%
+  // Phần chữ chiếm 75% (để lại 5% khoảng trống)
   .intro-text {
-    flex: 0 0 78%;           // 78% để dành 2% cho gap
+    flex: 0 0 75% !important;
+    max-width: 75%;
     text-align: left;
 
-    h2 {
-      font-family: $font-title;
-      font-size: 2rem;
-      margin: 0 0 15px 0;
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin: 0;
-    }
+    h2 { font-family: $font-title; font-size: 2rem; margin-bottom: 15px; }
+    p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
   }
 
-  // Phần hình ảnh chiếm ~20%
+  // Phần hình chiếm 20%
   .intro-illustration {
-    flex: 0 0 20%;
+    flex: 0 0 20% !important;
+    max-width: 20%;
     display: flex;
-    justify-content: flex-end; // Đẩy hình sát lề phải
+    justify-content: flex-end;
 
     img {
-      width: 100%;           // Ảnh sẽ tự co giãn theo 20% của khung
-      max-width: 180px;      // Giới hạn để không bị quá to trên màn hình lớn
+      width: 100%;           // Ảnh tự co theo 20% của khung
       height: auto;
-      border-radius: 50%;    // Giữ hình tròn trịa
+      border-radius: 50%;
+      display: block;
     }
   }
+}
 
   // Dòng chữ ký nằm dưới cùng, căn giữa
   .signature {
