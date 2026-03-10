@@ -24,7 +24,7 @@ body {
 // 3. Quy hoạch lề 15% (Layout)
 .container, .header-container {
   max-width: 100%; 
-width: 100%;
+  width: 100%;
   max-width: 1200px; // Khống chế độ rộng tối đa để web không bị quá loãng
   margin: 0 auto;    // Canh giữa khung
   padding-left: 5%;  // Giảm lề xuống để nội dung có chỗ diễn
@@ -163,7 +163,7 @@ width: 100%;
     max-width: 75%;
     height: auto !important;
 
-    h2 { font-family: $font-title; font-size: 2rem; margin-bottom: 15px; }
+    h2 { font-family: $font-title;  margin-bottom: 15px; }
     p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
   }
 
@@ -245,14 +245,5 @@ width: 100%;
     .intro-illustration {
       margin-bottom: 20px;
     }
-  }
-}
-
-
-// Chỉ dùng lề 15% khi màn hình thật sự lớn (Desktop)
-@media (min-width: 1200px) {
-  .container, .header-container {
-    padding-left: 15%;
-    padding-right: 15%;
   }
 }
