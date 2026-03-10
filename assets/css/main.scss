@@ -131,72 +131,61 @@ body {
 
 /* --- CSS MỚI CẬP NHẬT CHO TRANG CHỦ (NỐI VÀO CUỐI FILE MAIN.SCSS) --- */
 
-// Khung giới thiệu chính
 .intro-box {
-  border: 2px solid $text-color; // Viền đậm theo thiết kế
-  border-radius: 8px;
-  padding: 40px;
-  margin-top: 40px;
-  position: relative; // Để canh signature
+  background-color: #f5f1e9; // Màu nền kem nhẹ theo thiết kế Canva
+  border: 1px solid #333;    // Viền mảnh tinh tế
+  border-radius: 4px;
+  padding: 30px 40px;
+  margin-top: 20px;
+  position: relative;
 
   .intro-content {
     display: flex;
+    flex-direction: row;     // Ép nằm trên một hàng
     justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    align-items: center;     // Canh giữa theo chiều dọc
+    width: 100%;
+    gap: 2%;                 // Khoảng cách nhỏ giữa chữ và hình
   }
 
-  // Phần chữ bên trái
+  // Phần chữ chiếm ~80%
   .intro-text {
-    flex: 1;
+    flex: 0 0 78%;           // 78% để dành 2% cho gap
+    text-align: left;
 
     h2 {
       font-family: $font-title;
-      font-size: 2.2rem; // Cỡ chữ lớn, mềm mại
-      margin: 0 0 20px 0;
-      font-weight: normal;
+      font-size: 2rem;
+      margin: 0 0 15px 0;
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.9;
-      color: lighten($text-color, 15%); // Màu chữ xám nhẹ hơn
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 0;
     }
   }
 
-  // Phần hình ảnh bên phải
+  // Phần hình ảnh chiếm ~20%
   .intro-illustration {
-    width: 200px;
-    height: 200px;
+    flex: 0 0 20%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end; // Đẩy hình sát lề phải
 
     img {
-      width: 100%;
+      width: 100%;           // Ảnh sẽ tự co giãn theo 20% của khung
+      max-width: 180px;      // Giới hạn để không bị quá to trên màn hình lớn
       height: auto;
-      border-radius: 50%; // Giúp ảnh luôn tròn trịa như thiết kế Canva
-      display: block;
-    }
-
-    // Placeholder khi chưa có hình
-    .logo-placeholder {
-      font-family: $font-title;
-      font-size: 0.9rem;
-      color: $accent-color;
-      border: 1px dashed $accent-color;
-      padding: 20px;
-      text-align: center;
-      border-radius: 50%;
+      border-radius: 50%;    // Giữ hình tròn trịa
     }
   }
 
-  // Chữ "Created by PhucVo" canh giữa ở dưới
+  // Dòng chữ ký nằm dưới cùng, căn giữa
   .signature {
     text-align: center;
-    font-size: 0.9rem;
-    color: #999;
-    margin: 40px 0 0 0;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 30px;
     width: 100%;
   }
 }
