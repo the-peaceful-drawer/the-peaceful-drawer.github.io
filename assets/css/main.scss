@@ -1,5 +1,9 @@
 --- 
 ---
+
+* {
+  box-sizing: border-box !important;
+}
 // 1. Biến (Variables)
 $bg-color: #fdfaf5;
 $text-color: #333333;
@@ -20,8 +24,11 @@ body {
 // 3. Quy hoạch lề 15% (Layout)
 .container, .header-container {
   max-width: 100%; 
-  padding-left: 15%; 
-  padding-right: 15%;
+width: 100%;
+  max-width: 1200px; // Khống chế độ rộng tối đa để web không bị quá loãng
+  margin: 0 auto;    // Canh giữa khung
+  padding-left: 5%;  // Giảm lề xuống để nội dung có chỗ diễn
+  padding-right: 5%;
   box-sizing: border-box;
 }
 
@@ -238,5 +245,14 @@ body {
     .intro-illustration {
       margin-bottom: 20px;
     }
+  }
+}
+
+
+// Chỉ dùng lề 15% khi màn hình thật sự lớn (Desktop)
+@media (min-width: 1200px) {
+  .container, .header-container {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
