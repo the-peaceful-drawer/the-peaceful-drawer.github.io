@@ -262,7 +262,6 @@ body {
   
   h1 {
     font-family: $font-title;
-    margin-bottom: 30px;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
   }
@@ -274,7 +273,6 @@ body {
 
   .intro-sidebar {
     text-align: center;      // Căn giữa toàn bộ nội dung trong khung
-    background-color: #f5f1e9; // Màu nền kem đồng bộ trang chủ
     border: 1px solid #333;    // Viền mảnh
     border-radius: 4px;
     padding: 20px 15px;      // Padding nhỏ hơn trang chủ để vừa chiều ngang hẹp
