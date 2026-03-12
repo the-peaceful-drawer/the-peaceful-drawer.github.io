@@ -253,7 +253,6 @@ body {
   display: flex !important;
   flex-direction: row !important;
   gap: 3%; // Khoảng cách nhỏ giữa 2 cột
-  margin-top: 40px;
 }
 
 // Cột nội dung chính
@@ -271,38 +270,49 @@ body {
 
 // Cột Sidebar bên phải (15%)
 .page-sidebar {
-  flex: 0 0 15% !important;
-  border-left: 1px solid #eee; // Vạch ngăn cách nhẹ nhàng
-  padding-left: 20px;
+  flex: 0 0 18% !important; // Nới rộng nhẹ lên 18% để cái khung trông thoáng hơn
+  padding-left: 15px;
 
   .intro-sidebar {
-    text-align: left;
+    text-align: center;      // Căn giữa toàn bộ nội dung trong khung
+    background-color: #f5f1e9; // Màu nền kem đồng bộ trang chủ
+    border: 1px solid #333;    // Viền mảnh
+    border-radius: 4px;
+    padding: 20px 15px;      // Padding nhỏ hơn trang chủ để vừa chiều ngang hẹp
+    box-sizing: border-box;
 
     .intro-logo {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       img {
-        width: 100%; // Logo tự co theo chiều rộng 15%
+        width: 80%;          // Thu nhỏ logo một chút để cân đối trong khung
         height: auto;
         border-radius: 50%;
+        margin: 0 auto;
       }
     }
 
     h3 {
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      margin-bottom: 15px;
+      font-family: $font-title;
+      font-size: 1rem;       // Chữ tiêu đề nhỏ lại cho vừa sidebar
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding-bottom: 5px;
     }
 
     p {
-      font-size: 0.9rem; // Chữ nhỏ hơn một chút để vừa sidebar hẹp
-      line-height: 1.6;
-      color: #666;
+      font-size: 0.85rem;    // Chữ nhỏ gọn để không bị xuống dòng quá nhiều
+      line-height: 1.5;
+      color: #555;
+      text-align: left;      // Phần mô tả vẫn để căn lề trái cho dễ đọc
     }
 
     .signature-sidebar {
+      display: block;
       font-size: 0.7rem;
-      margin-top: 30px;
-      color: #ccc;
+      margin-top: 20px;
+      color: #999;
+      font-style: italic;
     }
   }
 }
