@@ -5,7 +5,7 @@
   box-sizing: border-box !important;
 }
 // 1. Biến (Variables)
-$bg-color: #fdfaf5;
+$bg-color: #f0e9de;
 $text-color: #333333;
 $accent-color: #8fb8a8;
 $font-title: "Georgia", "Baskerville", serif;
@@ -271,7 +271,6 @@ body {
 // Cột Sidebar bên phải (15%)
 .page-sidebar {
   flex: 0 0 18% !important; // Nới rộng nhẹ lên 18% để cái khung trông thoáng hơn
-  padding-left: 15px;
 
   .intro-sidebar {
     text-align: center;      // Căn giữa toàn bộ nội dung trong khung
