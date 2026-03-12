@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Kiến thức mới"
-permalink: /kien-thuc-moi/
+permalink: /chinh-phuc/kien-thuc-moi/
 ---
 <ul class="post-list">
   {% for post in site.categories['kien-thuc-moi'] %}

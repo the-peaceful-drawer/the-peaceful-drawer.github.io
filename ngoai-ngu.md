@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Ngoại ngữ"
-permalink: /ngoai-ngu/
+permalink: /chinh-phuc/ngoai-ngu/
 ---
 <ul class="post-list">
   {% for post in site.categories['ngoai-ngu'] %}
