@@ -13,8 +13,8 @@ Chỉ thế thôi là đủ rồi.
      alt="hanh trinh truong thanh" 
      style="width: 100%; max-width: 500px; display: block; margin: 2rem auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
-Đôi khi tôi thấy mình thật khó hiểu.(br)
-Có lúc tôi chỉ mong ước những điều thật bình thường, nhỏ bé, góp nhặt những thứ ấy làm hạnh phúc mỗi ngày.(br)
+Đôi khi tôi thấy mình thật khó hiểu.<br>
+Có lúc tôi chỉ mong ước những điều thật bình thường, nhỏ bé, góp nhặt những thứ ấy làm hạnh phúc mỗi ngày.<br>
 Nhưng có lắm lúc tôi lại cảm thấy mình thật tham vọng, muốn cái này cái nọ, và ko có ý định an phận sống an yên kiểu chỉ cần một tách trà là hạnh phúc cả buổi sáng.
 
 Đấy, sáng hôm qua tôi chỉ  mong con có thể học hành nhẹ nhàng vừa sức, vui vẻ cùng bạn trải qua 6 năm tiểu học.
@@ -27,19 +27,19 @@ Và rồi tôi lại bối rối. Tôi ko muốn áp lực việc học lên cho
 Tôi nghĩ có những hạnh phúc đôi lúc phải nổ lực mới có được.
 
 Tôi sợ tôi một lúc nào đó vô tình can thiệp quá sâu, sẽ tạo ra các định hướng cuộc đời ko hợp lí, hoặc tệ hơn sẽ làm ảnh hưởng đến cuộc đời con sau này, và con sẽ oán trách tôi chăng?(br)
-Nhưng nếu tôi không làm gì cả  thì tôi lại lo rằng cuộc đời nó sẽ "thả trôi" chăng, và mình là có phải là một ng mẹ vô trách nhiệm?(br)
-Cần có sự cân bằng giữa 2 điều trên, tức là sẽ vừa định hướng, tạo điều kiện để con tiếp xúc với nhiều thứ, và sẽ tìm ra cuộc đời thích hợp cho con, nhưng cũng đồng thời luôn nhắc nhở mình ko nên can thiệt quá sâu, đặc biệt là cưỡng cầu, vì chung quy sự cưỡng cầu nào cũng gây ra vết thương, cho dù đích đến của nó có tốt đi chăng nữa. (br)
+Nhưng nếu tôi không làm gì cả  thì tôi lại lo rằng cuộc đời nó sẽ "thả trôi" chăng, và mình là có phải là một ng mẹ vô trách nhiệm?<br>
+Cần có sự cân bằng giữa 2 điều trên, tức là sẽ vừa định hướng, tạo điều kiện để con tiếp xúc với nhiều thứ, và sẽ tìm ra cuộc đời thích hợp cho con, nhưng cũng đồng thời luôn nhắc nhở mình ko nên can thiệt quá sâu, đặc biệt là cưỡng cầu, vì chung quy sự cưỡng cầu nào cũng gây ra vết thương, cho dù đích đến của nó có tốt đi chăng nữa. <br>
 CUỘC ĐỜI CỦA CON PHẢI LÀ DO CON QUYẾT ĐỊNH.
 Rõ ràng tôi đã làm việc với bản thân như thế rồi, nhưng vẫn có lúc bị mông lung, băn khoăn rằng mình có đang làm đúng hay không đây nhỉ?
 Những lúc như thế lại thấy làm ba mẹ thật khó biết bao nhiêu.
 
-Nhưng sau tất cả, thì tôi lại thấy biết ơn. Vì con cái đã cho tôi cơ hội được làm một chức vụ khó nhằn, có thể là khó nhất trong cuộc đời này, là làm cha mẹ.(br)
-Tôi không còn gai góc, thay vào đó nhẹ nhàng hơn trong những nhận định đúng sai, hoặc lập luận một vấn đề gì đó.(br)
+Nhưng sau tất cả, thì tôi lại thấy biết ơn. Vì con cái đã cho tôi cơ hội được làm một chức vụ khó nhằn, có thể là khó nhất trong cuộc đời này, là làm cha mẹ.<br>
+Tôi không còn gai góc, thay vào đó nhẹ nhàng hơn trong những nhận định đúng sai, hoặc lập luận một vấn đề gì đó.<br>
 Tôi có thêm góc nhìn mới mẻ, có thêm cơ hội quay về trò chuyện với cô bé cao gầy, đen nhẻm nhiều năm về trước để làm rõ rằng lúc đó tôi của lúc đó thật sự muốn gì, và cảm giác ra sao, có mệt mỏi, có áp lực, có oán trách gì không ?
 
-Cô giáo người Nhật của tôi đã nói "子どもをそだってこそ、一人前になります".(br)
-Có nghĩa rằng : Chính nhờ việc nuôi dưỡng con cái, con người ta mới trở thành một người đúng nghĩa".(br)
-Bạn trải qua các cung bậc hạnh phúc, đau khổ, hi sinh, kiên nhẫn, rồi thấu hiểu, để trường thành.(br)
+Cô giáo người Nhật của tôi đã nói "子どもをそだってこそ、一人前になります".<br>
+Có nghĩa rằng : Chính nhờ việc nuôi dưỡng con cái, con người ta mới trở thành một người đúng nghĩa".<br>
+Bạn trải qua các cung bậc hạnh phúc, đau khổ, hi sinh, kiên nhẫn, rồi thấu hiểu, để trường thành.<br>
 Có thể nói trong quá trình nuôi dạy một đứa trẻ, cha mẹ mới là người đang được "dạy dỗ" để trưởng thành.(※1)
 
 Vâng, đối với tôi nó đúng là như thế. 
