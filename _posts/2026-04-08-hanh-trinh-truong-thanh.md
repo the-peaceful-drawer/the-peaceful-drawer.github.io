@@ -26,7 +26,7 @@ Sau đó tôi lại tự vả vào mặt mình rằng : thèn bé nhà mình kh�
 Và rồi tôi lại bối rối. Tôi ko muốn áp lực việc học lên cho con, nhưng lại không mong muốn cuộc đời nó cứ nhẹ nhàng như thế.
 Tôi nghĩ có những hạnh phúc đôi lúc phải nổ lực mới có được.
 
-Tôi sợ tôi một lúc nào đó vô tình can thiệp quá sâu, sẽ tạo ra các định hướng cuộc đời ko hợp lí, hoặc tệ hơn sẽ làm ảnh hưởng đến cuộc đời con sau này, và con sẽ oán trách tôi chăng?(br)
+Tôi sợ tôi một lúc nào đó vô tình can thiệp quá sâu, sẽ tạo ra các định hướng cuộc đời ko hợp lí, hoặc tệ hơn sẽ làm ảnh hưởng đến cuộc đời con sau này, và con sẽ oán trách tôi chăng?<br>
 Nhưng nếu tôi không làm gì cả  thì tôi lại lo rằng cuộc đời nó sẽ "thả trôi" chăng, và mình là có phải là một ng mẹ vô trách nhiệm?<br>
 Cần có sự cân bằng giữa 2 điều trên, tức là sẽ vừa định hướng, tạo điều kiện để con tiếp xúc với nhiều thứ, và sẽ tìm ra cuộc đời thích hợp cho con, nhưng cũng đồng thời luôn nhắc nhở mình ko nên can thiệt quá sâu, đặc biệt là cưỡng cầu, vì chung quy sự cưỡng cầu nào cũng gây ra vết thương, cho dù đích đến của nó có tốt đi chăng nữa. <br>
 CUỘC ĐỜI CỦA CON PHẢI LÀ DO CON QUYẾT ĐỊNH.
