@@ -1,41 +1,32 @@
 <header class="site-header">
+    <h1 class="site-title">Ngăn kéo bình yên</h1>
+    <nav>
+        <a href="/">Trang chủ</a>
+        <a href="/hoc-cach-song/">Học cách sống</a>
+        <a href="/chinh-phuc/">Chinh phục</a>
+        <a href="/nha-va-be/">Nhà và bé</a>
+        <a href="/tuy-hung-vlog/">Tùy hứng vlog</a>
+    </nav>
     <div class="header-container">
         <div class="site-title">
-            <a href="{{ '/' | relative_url }}">
-                {% if page.url contains '/vi/' %}Ngăn kéo bình yên{% else %}穏やかな引き出し{% endif %}
-            </a>
+            <a href="{{ '/' | relative_url }}">Ngăn kéo bình yên</a>
         </div>
 
         <nav class="main-nav">
             <ul class="menu-list">
-                {% if page.url contains '/vi/' %}
-                    <li><a href="{{ '/vi/' | relative_url }}">TRANG CHỦ</a></li>
-                    <li><a href="{{ '/vi/hoc-cach-song' | relative_url }}">HỌC CÁCH SỐNG</a></li>
-                    <li class="has-submenu">
-                        <a href="{{ '/vi/chinh-phuc' | relative_url }}">CHINH PHỤC <span class="arrow">▼</span></a>
-                        <ul class="submenu">
-                            <li><a href="{{ '/vi/chinh-phuc/ngoai-ngu' | relative_url }}">NGOẠI NGỮ</a></li>
-                            <li><a href="{{ '/vi/chinh-phuc/kien-thuc-moi' | relative_url }}">KIẾN THỨC MỚI</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ '/vi/nha-va-be' | relative_url }}">NHÀ VÀ BÉ</a></li>
-                    <li><a href="{{ '/vi/tuy-hung-vlog' | relative_url }}">TÙY HỨNG VLOG</a></li>
-                    <li><a href="{{ '/' | relative_url }}" style="color: #ff5722;">JP</a></li>
+                <li><a href="{{ '/' | relative_url }}">TRANG CHỦ</a></li>
+                <li><a href="{{ '/hoc-cach-song' | relative_url }}">HỌC CÁCH SỐNG</a></li>
 
-                {% else %}
-                    <li><a href="{{ '/' | relative_url }}">ホーム</a></li>
-                    <li><a href="{{ '/hoc-cach-song' | relative_url }}">生き方</a></li>
-                    <li class="has-submenu">
-                        <a href="{{ '/chinh-phuc' | relative_url }}">挑戦 <span class="arrow">▼</span></a>
-                        <ul class="submenu">
-                            <li><a href="{{ '/chinh-phuc/ngoai-ngu' | relative_url }}">外国語</a></li>
-                            <li><a href="{{ '/chinh-phuc/kien-thuc-moi' | relative_url }}">新しい知識</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ '/nha-va-be' | relative_url }}">家と子供</a></li>
-                    <li><a href="{{ '/tuy-hung-vlog' | relative_url }}">気ままなVLOG</a></li>
-                    <li><a href="{{ '/vi/' | relative_url }}" style="color: #ff5722;">VN</a></li>
-                {% endif %}
+                <li class="has-submenu">
+                    <a href="{{ '/chinh-phuc' | relative_url }}">CHINH PHỤC <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="{{ '/chinh-phuc/ngoai-ngu' | relative_url }}">NGOẠI NGỮ</a></li>
+                        <li><a href="{{ '/chinh-phuc/kien-thuc-moi' | relative_url }}">KIẾN THỨC MỚI</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ '/nha-va-be' | relative_url }}">NHÀ VÀ BÉ</a></li>
+                <li><a href="{{ '/tuy-hung-vlog' | relative_url }}">TÙY HỨNG VLOG</a></li>
             </ul>
         </nav>
     </div>
