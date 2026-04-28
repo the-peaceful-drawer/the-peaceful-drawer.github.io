@@ -13,21 +13,24 @@ Mục đích là tạo ra một giao diện đơn giản để kiểm tra trạn
 
 <img src="https://the-peaceful-drawer.github.io/assets/img/containerstatus2.png" 
      alt="Python" 
-     style="width: 100%; max-width: 500px; display: block; margin: 2rem auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+     style="width: 100%; max-width: 900px; display: block; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
      
 <img src="https://the-peaceful-drawer.github.io/assets/img/containerstatus2.png" 
      alt="LXD Container" 
-     style="width: 100%; max-width: 500px; display: block; margin: 2rem auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+     style="width: 100%; max-width: 900px; display: block; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
 Qua dự án này, mình đã nắm được những khái niệm cơ bản:
-
-    Backend: Mình dùng Python để viết các API. Phần này đóng vai trò xử lý bên dưới, trực tiếp truy cập vào hệ thống để lấy dữ liệu từ Container.<br>
-
-    Frontend: Mình sử dụng React và JavaScript để xây dựng giao diện người dùng. Đây là nơi hiển thị trạng thái của các container để mình có thể quan sát trực quan.<br>
-
-    Kết nối: Mình hiểu được luồng dữ liệu đi từ Frontend đến Backend thông qua các yêu cầu (request). Dữ liệu phản hồi được trả về dưới dạng JSON – một định dạng chung giúp hai bên "nói chuyện" được với nhau.
+Backend: Python dùng các API, xử lí bên dưới, trực tiếp lấy dữ liệu từ Container.
+Frondend: React đóng vai trò xây dựng giao diện ở trên, hiển thị trạng thái của các container.
+Connect : Frontend -> Backend và ngược lại dưới dạng JSON.
 
 Dù chỉ mới bắt đầu nhưng việc tự tay kết nối các thành phần từ Python ở Backend đến React ở Frontend đã giúp mình không còn bỡ ngỡ với các thuật ngữ Web nữa.  <br>
-Thay vì chỉ đọc lý thuyết, việc thấy ứng dụng thực sự hoạt động giúp mình có cái nhìn rõ ràng hơn về cấu trúc của một hệ thống Web hiện đại.
+Thực ra đối với ng làm về mảng này, khi đọc bài viết này sẽ kiểu như nhập môn lập trình C có bài yêu cầu : sắp xếp các số theo thứ tự tăng dần ý :D.
+Sơ khai. Vâng đúng vậy. Mình là newbie :D.
+Nhưng thật sự bắt tay vào làm gì đó sẽ cho bạn cái nhìn khác. 
+Khi bạn nhảy xuống 1 cái hố, cảm giác rất khác vói khi đúng trên bờ nhìn xuống. 
+Và dù đoạn đường sau này còn rất dài, nhưng mình đã đặt viên gạch đầu tiên như thế đấy.
+
 Vì có quá nhiều thứ ở hiện tai mà mình muốn học, nên tạm thời mình sẽ gác lại đó, hoặc có thể kết hợp kiến thức này trong một ứng dụng khác. 
+NICE :)
